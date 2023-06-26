@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <title>payment page</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <form id="myform" onsubmit="return send()">
+                <label for="ccn">Card Number:</label>
+                <input type="text" id="num" class="w" maxlength="14">
+                <p id="error"></p>
+                <label for="cname">Name</label>
+                <input type="text" id="txts"  class="s">
+                <p id="error-text"></p>
+               <div class="year-container">
+                <div class="year">
+                    <label for="expyear">Exp Date</label>
+                    <div class="year__div">
+                        <input type="text" id="expyear" name="expyear" class="expyears" maxlength="5">
+                    <input type="text" id="month" name="month" class="months" maxlength="4">
+                </div>
+                <div class="text">
+                    <p id="error2"></p>
+                    <p id="error3"></p>
+                </div>
+                </div>
+                <div class="cvc">
+                    <label for="cvv">cvc</label>
+                <input type="text" id="cvv" name="cvv" class="cvvs" maxlength="3">
+                <p id="error4"></p>
+                </div>
+               </div>
+               
+               <input type="submit" value="Confirm">
+            </form>
+            <div class="img__position">
+                <div class="img__circle">
+                    <img src="img/card-logo 1.png" alt="">
+                    <div class="img__number">9591 6489 6321 1023</div>
+                    <div class="img__content">
+                        <div class="img__text">Nick Monkey</div>
+                        <div class="img__date">12/23</div>
+                    </div>
+                </div>
+            </div>
+            <div class="img_blank">
+                <div class="img__blank-number">044</div>
+            </div>
+        </div>
+    </div>
+   <script src="js/app.js"></script> 
+</body>
+</html>
